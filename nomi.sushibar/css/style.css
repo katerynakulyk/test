@@ -1,0 +1,280 @@
+*{
+    /*  - * - буде працювати до всіх елементів */
+    box-sizing: border-box;
+    /*  - Властивість box-sizing дозволяє змінити алгоритм розрахунку розмірів блоку, щоб властивості width і height задавали розміри не контенту, а саме розміри блоку */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+      /*  - встиль шрифта */
+    text-align: center;
+    /*  - всі елементи по центрі сторінки */
+    text-transform: uppercase;
+    /*  - всі літери з великої букви */
+
+    font-family: serif;
+    background-color: #dadada;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  - shift + option + F - зробити читаючий код, відформатувати до стандарту, вирівняти*/
+/*
+.header1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   max-width: 80%;
+    height: 300px;
+    
+}*/
+
+.header1{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.fotogolovne{
+border-radius: 0;
+width: 80%;
+height: 200px;
+}*/
+
+.fotogolovne1{
+    
+   
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  
+    }
+
+.header1 h1 {
+    color:#899788;
+    position: absolute;
+    top: 50%; /* розташування по вертикалі */
+    left: 50%; /* розташування по горизонталі */
+    transform: translate(-50%, -50%); /* центрирование тексту */
+
+    font-size: 120px; /* розмір шрифту */
+    background: rgba(0, 0, 0, 0.1); /* напівпрозорий фон для кращої видимості тексту */
+   /* відступи навколо тексту */
+     /* округлення країв фону */
+    left: 50%;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 4);
+    top: 2%; /* розташування по вертикалі */
+    padding-top: 120px;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+
+   /* font-size: calc(60px + 10vw); /* змінюється відносно розміру екрану */
+}
+
+.header1 h3{
+    font-size: 40px;
+    position: absolute;
+color: #ffffff;
+transform: rotate(90deg);
+left: 20px;
+top: 20px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 4);
+font-weight: 200;
+top: 28%; /* розташування по вертикалі */
+    left: 53%; /* розташування по горизонталі */
+
+   
+
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+a{
+    margin: 100px 0;
+    
+    color: #ffffff;
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+}
+
+    
+/*
+
+button {
+    font-family: serif;
+  
+    border-radius: 8px;
+    background-color: #c4bbb1;
+    width: 165px;
+    height: 57px;
+    border: none;
+    margin: 15px;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+
+.spysok_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+*/
+.menu_name{   background-color: #899788;
+   
+    font-family: serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.menu{
+padding: 5px;
+font-family: serif;
+color:#899788;
+color:white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 3);
+font-size: 90px;
+}
+
+
+.menu_list_item{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold; 
+}
+
+.menu-container {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           gap: 20px;
+           padding: 40px 0;
+           max-width: 80%;
+         
+}
+
+.menufoto{
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+}
+
+.menu-item {
+background-color: #c4bbb1;
+ border-radius: 15px;
+ overflow: hidden;
+ width: 350px;
+ height: 250px;
+ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+ transition: transform 0.3s;
+ position: relative;
+ display: inline-block;
+}
+
+.menu-item:hover {
+ transform: scale(1.05);
+}
+
+.menu-item img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+
+
+}
+
+.menu-item h3 {
+    color: rgb(255, 255, 255);
+           margin: 10px;
+           font-size: 40px;
+           text-align: center;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+           
+          
+
+       
+          
+           
+           
+}
+       
+.menu-item p {
+           margin: 0;
+           padding: 0 15px;
+           text-align: center;
+           color: black;
+}
+           
+.price {
+           margin: 20px 0;
+           text-align: center;
+           color: black;
+           font-size: 1.4em;
+           font-weight: bold;
+}
+
+.footer{
+margin-top: 5px;
+margin-bottom: 20px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+}
+
+@media  (max-width: 600px) {
+    
+
+    .fotogolovne{
+        transform: rotate(90deg);
+        }
+        .header1{
+       display: flex;
+       flex-shrink: 1;
+        }
+
+    .menu_name{
+    width: 768px;
+    }
+    
+    
+    
+}
+

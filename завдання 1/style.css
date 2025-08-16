@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .product-card {
+    width: 280px;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .product-description {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .price-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+  }
+
+  .new-price {
+    color: #e60023;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
+
+  .favorite {
+    font-size: 22px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .favorite:hover {
+    color: #e60023;
+  }
+
+  /* Адаптивність */
+  @media (max-width: 320px) {
+    .product-card {
+      width: 100%;
+    }
+  }
